@@ -1,16 +1,16 @@
 import React from "react";
 
-export default function NavBar() {
+export default function NavBar({handleNavClick}) {
 
-    const smoothScroll = (event) => {
-        event.preventDefault(); // Evita el salto instantáneo
-        const targetId = event.currentTarget.getAttribute("href").slice(1); // Obtén el ID del destino
-        const targetElement = document.getElementById(targetId);
+    // const smoothScroll = (event) => {
+    //     event.preventDefault(); // Evita el salto instantáneo
+    //     const targetId = event.currentTarget.getAttribute("href").slice(1); // Obtén el ID del destino
+    //     const targetElement = document.getElementById(targetId);
     
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: "smooth" }); // Desplázate suavemente
-        }
-      };
+    //     if (targetElement) {
+    //       targetElement.scrollIntoView({ behavior: "smooth" }); // Desplázate suavemente
+    //     }
+    //   };
     
     return (
         <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
@@ -30,19 +30,19 @@ export default function NavBar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#about" onClick={smoothScroll}>About me</a>
+                            <button className="nav-link active" aria-current="page" href="#about" onClick={() => handleNavClick('about')}>About me</button>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#stacks" onClick={smoothScroll}>Stacks</a>
+                            <button className="nav-link" href="#stacks" onClick={() => handleNavClick('stacks')}>Stacks</button>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#projects" onClick={smoothScroll}>Projects</a>
+                            <button className="nav-link" href="#projects" onClick={() => handleNavClick('projects')}>Projects</button>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#contact" onClick={smoothScroll}>Contact</a>
+                            <button className="nav-link" href="#"onClick={() => handleNavClick('contact')}>Contact</button>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#CV">CV</a>
+                            <button className="nav-link" href="#CV">CV</button>
                         </li>
                     </ul>
                 </div>

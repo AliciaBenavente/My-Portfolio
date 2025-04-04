@@ -28,6 +28,26 @@
   color: #61dafb;
 }
 
+img {
+  max-width: 100%;
+}
+.section-container {
+  transition: opacity 1.5s ease, visibility 1s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.section-container.fade-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+.section-container.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
 #about {
   text-align: center;
   padding: 50px 20px;

@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
+import NavBar from './NabBar/navBar';
 
 function App() {
 
@@ -11,6 +11,12 @@ function App() {
   });
   // const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
+  const [visibleSection, setVisibleSection] = useState("about"); // Estado inicial: "about"
+
+  const handleNavClick = (section) => {
+    setVisibleSection(section); // Actualiza la sección visible
+  };
+
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -31,101 +37,125 @@ function App() {
 
   return (
     <div className="container App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header> */}
+      <NavBar handleNavClick={handleNavClick} />
 
-        <section id='about' className="">
-          <h1>Welcome to my portfolio</h1>
-          <p>From doing research in laboratories....</p>
-          <p>To writing code and exploring documentations</p>
-        </section>
-        <div id='stacks' className="">
-          <h1>Stacks</h1>
-          <div>
-            <ul>Front-end:
-              <li>React</li>
-              <li>React Native</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>Bootstrap</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
+      <div className={`section-container ${visibleSection === "about" ? "fade-in" : "fade-out"}`}>
+        {visibleSection === "about" && (
+          <section id="about">
+            <h1>Welcome to my portfolio</h1>
+            <div>
+              <img src="/lab-girl.png" alt="laboratory" />
+              <p>From doing research in laboratories....</p>
+            </div>
+            <div>
+              <img src="/coding-girl.png" alt="coding" />
+              <p>To writing code and exploring documentations!</p>
+            </div>
+            <p>Decided to make a change in my life, I found there is not just one thing one can enjoy.</p>
+            <p>
+              I enjoy being a Laboratory Technician, I enjoy being a baker...{" "}
+              I enjoy being a Full Stack Developer
+            </p>
+          </section>
+        )}
+      </div>
+      <div className={`section-container ${visibleSection === "stacks" ? "fade-in" : "fade-out"}`}>
+        {visibleSection === "stacks" && (
+          <div id="stacks">
+            <h1>Stacks</h1>
+            <div className='row'>
+              <div className='col-4'>
+                <h5>Front-end</h5>
+                <p>React</p>
+                <p>React Native</p>
+                <p>JavaScript</p>
+                <p>TypeScript</p>
+                <p>Bootstrap</p>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+              <div className='col-4'>
+              <h5>Back-end</h5>
+                <p>Node.js</p>
+                <p>Python</p>
+                <p>Flask</p>
+                <p>SQLAlchemy</p>
+                <p>MySQL</p>
+              </div>
+              <div className='col-4'>
+              <h5>Tools</h5>
+                <p>Visual Studio Code</p>
+                <p>GitHub</p>
+                <p>Postman</p>
+                <p>Jira</p>
+                <p>Trello</p>
+                <p>Miró</p>
+                <p>Git</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <ul>Back-end:
-              <li>Node.js</li>
-              <li>Python</li>
-              <li>Flask</li>
-              <li>SQLAlquemy</li>
-              <li>MySQL</li>
-            </ul>
+        )}
+      </div>
+      <div className={`section-container ${visibleSection === "projects" ? "fade-in" : "fade-out"}`}>
+        {visibleSection === "projects" && (
+          <div id="projects" className="">
+            <h1>Projects</h1>
+            <p>Más Buenos Que El Pan</p>
+            <p>SALO</p>
           </div>
-          <div>
-            <ul>Tools:
-              <li>Visual Studio Code</li>
-              <li>GitHub</li>
-              <li>Postman</li>
-              <li>Jira</li>
-              <li>Trello</li>
-              <li>Miró</li>
-              <li>Git</li>
-            </ul>
-          </div>
-        </div>
-        <div id='projects' className="">
-          <h1>Projects</h1>
-          <p>Más Buenos Que El Pan</p>
-          <p>SALO</p>
-        </div>
-        <div id='contact' className="container2">
-          <div className="login-box">
-            <form onSubmit={handleSubmit} className="form2">
-              {/* <div className="logo"></div> */}
-              <span className="header">Contact</span>
-              <input type="name"
-                placeholder="Name"
-                className="input"
-                id='name'
-                value={form.name}
-                onChange={handleChange}
-              />
-              <input type="email"
-                placeholder='Email'
-                className='input'
-                id="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange} />
-              <textarea
-                className='input'
-                placeholder='Message'
-                id="message"
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                // required
-                style={{ width: "100%", padding: "8px", height: "100px" }}
-              />
-              {error && (
-                <div className='container errorMessage'
-                  style={{ border: '1px', borderColor: 'red', borderRadius: '5px', height: '50px' }}>
-                  <p className='errorText' style={{ color: "red" }}>
-                    Please fill in your name and email
-                  </p>
-                </div>
-              )}
-              <button type="submit" className="button sign-in">Send</button>
-            </form>
-          </div>
-        </div>
+        )}
+      </div>
 
-        <footer>
-          <p>© 2025 Alicia. Todos los derechos reservados.</p>
-          <p>Diseñado por Alicia</p>
-          <p>Desarrollado por Alicia</p>
-        </footer>
+      <div className={`section-container ${visibleSection === "contact" ? "fade-in" : "fade-out"}`}>
+        {visibleSection === "contact" && (
+          <div id='contact' className="container2">
+            <div className="login-box">
+              <form onSubmit={handleSubmit} className="form2">
+                <span className="header">Contact</span>
+                <input type="name"
+                  placeholder="Name"
+                  className="input"
+                  id='name'
+                  value={form.name}
+                  onChange={handleChange}
+                />
+                <input type="email"
+                  placeholder='Email'
+                  className='input'
+                  id="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange} />
+                <textarea
+                  className='input'
+                  placeholder='Message'
+                  id="message"
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  // required
+                  style={{ width: "100%", padding: "8px", height: "100px" }}
+                />
+                {error && (
+                  <div className='container errorMessage'
+                    style={{ border: '1px', borderColor: 'red', borderRadius: '5px', height: '50px' }}>
+                    <p className='errorText' style={{ color: "red" }}>
+                      Please fill in your name and email
+                    </p>
+                  </div>
+                )}
+                <button type="submit" className="button sign-in">Send</button>
+              </form>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <footer>
+        <p>© 2025 Alicia. Todos los derechos reservados.</p>
+        <p>Diseñado por Alicia</p>
+        <p>Desarrollado por Alicia</p>
+      </footer>
     </div>
   );
 }
