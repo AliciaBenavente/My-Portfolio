@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisiblePart((prevPart) => prevPart === 1 ? 2 : 1)
-    }, 4000);
+    }, 10000);
     return () => clearTimeout(timer);
   }, [visiblePart]);
 
@@ -117,45 +117,48 @@ function App() {
       </div>
 
       <div className={`section-container ${visibleSection === "contact" ? "fade-in" : "fade-out"}`}>
+        <h1 className="contact-title">Get in touch</h1>
         {visibleSection === "contact" && (
-          <div id='contact' className="container2">
-            <div className="login-box">
-              <form onSubmit={handleSubmit} className="form2">
-                <span className="header">Contact</span>
-                <input type="name"
-                  placeholder="Name"
-                  className="input"
-                  id='name'
-                  value={form.name}
-                  onChange={handleChange}
-                />
-                <input type="email"
-                  placeholder='Email'
-                  className='input'
-                  id="email"
-                  name="email"
-                  value={form.email}
-                  onChange={handleChange} />
-                <textarea
-                  className='input'
-                  placeholder='Message'
-                  id="message"
-                  name="message"
-                  value={form.message}
-                  onChange={handleChange}
-                  style={{ width: "100%", padding: "8px", height: "100px" }}
-                />
-                {error && (
-                  <div className='container errorMessage'
-                    style={{ border: '1px', borderColor: 'red', borderRadius: '5px', height: '50px' }}>
-                    <p className='errorText' style={{ color: "red" }}>
-                      Please fill in your name and email
-                    </p>
-                  </div>
-                )}
-                <button type="submit" className="button sign-in">Send</button>
+          <div id='contact' className="container">
+              <form onSubmit={handleSubmit} className="form">
+                <div className='form-container'>
+                  <p className="name-span">Name</p>
+                  <input type="name"
+                    placeholder="Name"
+                    className="input"
+                    id='name'
+                    value={form.name}
+                    onChange={handleChange}
+                  />
+                  <p className="name-span">Email</p>
+                  <input type="email"
+                    placeholder='Email'
+                    className='input'
+                    id="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange} />
+                  <p className="name-span">Message</p>
+                  <textarea
+                    className='input'
+                    placeholder='Message'
+                    id="message"
+                    name="message"
+                    value={form.message}
+                    onChange={handleChange}
+                    style={{ width: "100%", padding: "8px", height: "100px" }}
+                  />
+                  {error && (
+                    <div className='container errorMessage'
+                      style={{ border: '1px', borderColor: 'red', borderRadius: '5px', height: '50px' }}>
+                      <p className='errorText' style={{ color: "red" }}>
+                        Please fill in your name and email
+                      </p>
+                    </div>
+                  )}
+                  <button type="submit" className="button sign-in">Send</button>
+                </div>
               </form>
-            </div>
           </div>
         )}
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import './navBar.css';
 
 export default function NavBar({handleNavClick}) {
 
@@ -32,7 +33,7 @@ export default function NavBar({handleNavClick}) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <button className="nav-link active" aria-current="page" href="#about" onClick={() => handleNavClick('about')}>About me</button>
+                            <button className="nav-link" aria-current="page" href="#about" onClick={() => handleNavClick('about')}>About me</button>
                         </li>
                         <li className="nav-item">
                             <button className="nav-link" href="#stacks" onClick={() => handleNavClick('stacks')}>Stacks</button>
