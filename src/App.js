@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import NavBar from './NabBar/navBar';
 
 function App() {
@@ -12,6 +12,14 @@ function App() {
   // const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
   const [visibleSection, setVisibleSection] = useState("about"); // Estado inicial: "about"
+  const [visiblePart, setVisiblePart] = useState(1);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisiblePart((prevPart) => prevPart === 1 ? 2 : 1)
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, [visiblePart]);
 
   const handleNavClick = (section) => {
     setVisibleSection(section); // Actualiza la sección visible
@@ -40,29 +48,31 @@ function App() {
       <NavBar handleNavClick={handleNavClick} />
 
       <div className={`section-container ${visibleSection === "about" ? "fade-in" : "fade-out"}`}>
+        <h1 className='welcome-title'>Welcome to my portfolio</h1>
         {visibleSection === "about" && (
           <section id="about">
-            <h1>Welcome to my portfolio</h1>
-            <div>
-              <img src="/lab-girl.png" alt="laboratory" />
-              <p>From doing research in laboratories....</p>
+            <div className='container-girl'>
+              <div className={`girl ${visiblePart === 1 ? "fade-in" : "fade-out"}`}>
+                <p>From doing research in laboratories....</p>
+                <img src="/lab-girl.png" alt="laboratory" />
+              </div>
+              <div className={`girl2 ${visiblePart === 2 ? "fade-in" : "fade-out"}`}>
+                <p>To writing code and exploring documentations!</p>
+                <img src="/coding-girl.png" alt="coding" />
+                <p>Decided to make a change in my life, I found there is not just one thing one can enjoy.</p>
+                <p>
+                  I enjoy being a Laboratory Technician, I enjoy being a baker...{" "}
+                  I enjoy being a Full Stack Developer
+                </p>
+              </div>
             </div>
-            <div>
-              <img src="/coding-girl.png" alt="coding" />
-              <p>To writing code and exploring documentations!</p>
-            </div>
-            <p>Decided to make a change in my life, I found there is not just one thing one can enjoy.</p>
-            <p>
-              I enjoy being a Laboratory Technician, I enjoy being a baker...{" "}
-              I enjoy being a Full Stack Developer
-            </p>
           </section>
         )}
       </div>
       <div className={`section-container ${visibleSection === "stacks" ? "fade-in" : "fade-out"}`}>
+        <h1 className='stack-title'>Stacks</h1>
         {visibleSection === "stacks" && (
           <div id="stacks">
-            <h1>Stacks</h1>
             <div className='row'>
               <div className='col-4'>
                 <h5>Front-end</h5>
@@ -75,7 +85,7 @@ function App() {
                 <p>CSS</p>
               </div>
               <div className='col-4'>
-              <h5>Back-end</h5>
+                <h5>Back-end</h5>
                 <p>Node.js</p>
                 <p>Python</p>
                 <p>Flask</p>
@@ -83,7 +93,7 @@ function App() {
                 <p>MySQL</p>
               </div>
               <div className='col-4'>
-              <h5>Tools</h5>
+                <h5>Tools</h5>
                 <p>Visual Studio Code</p>
                 <p>GitHub</p>
                 <p>Postman</p>
@@ -97,9 +107,9 @@ function App() {
         )}
       </div>
       <div className={`section-container ${visibleSection === "projects" ? "fade-in" : "fade-out"}`}>
+        <h1 className='project-title'>Projects</h1>
         {visibleSection === "projects" && (
           <div id="projects" className="">
-            <h1>Projects</h1>
             <p>Más Buenos Que El Pan</p>
             <p>SALO</p>
           </div>
@@ -133,7 +143,6 @@ function App() {
                   name="message"
                   value={form.message}
                   onChange={handleChange}
-                  // required
                   style={{ width: "100%", padding: "8px", height: "100px" }}
                 />
                 {error && (

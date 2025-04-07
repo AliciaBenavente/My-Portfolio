@@ -1,3 +1,6 @@
+body {
+  background-color: #102e40;
+}
 .App {
   text-align: center;
 }
@@ -28,13 +31,407 @@
   color: #61dafb;
 }
 
-img {
-  max-width: 100%;
+/* img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+} Añadir a los vídeos */
+
+/* Para pantallas 3xl (ordenador) */
+@media (min-width: 1400px) {
+  .welcome-title {
+    font-size: 2.5em;
+    margin-top: 4%;
+    color: palegreen;
+  }
+  img {
+    max-width: 60%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .container-girl {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 120vh;
+  }
+  .girl {
+    position: absolute;
+    top: 55vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  .girl2 {
+    position: absolute;
+    top: 61.5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .stack-title {
+    margin-top: -4%;
+    margin-bottom: 2%;
+  }
+  .project-title {
+    margin-top: -5.5%;
+    /* margin-bottom: 2%; */
+  }
 }
+/* Para pantallas 3xl (ordenador) */
+
+/* Para pantallas xxl (ordenador) */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .welcome-title {
+    font-size: 2.5em;
+    margin-top: 5%;
+    color: red;
+  }
+  img {
+    max-width: 60%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .container-girl {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+  .girl {
+    position: absolute;
+    top: 46.5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  .girl2 {
+    position: absolute;
+    top: 53vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .stack-title {
+    margin-top: -5%;
+    margin-bottom: 3%;
+  }
+  .project-title {
+    margin-top: -7.5%;
+    /* margin-bottom: 2%; */
+  }
+}
+/* Para pantallas xxl (ordenador) */
+
+/* Para pantallas xl (ordenador) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .welcome-title {
+    font-size: 2.5em;
+    margin-top: 6%;
+    color: orange;
+  }
+  img {
+    max-width: 70%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .container-girl {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 94vh;
+  }
+  .girl {
+    position: absolute;
+    top: 43vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  .girl2 {
+    position: absolute;
+    top: 49.5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .stack-title {
+    margin-top: -6%;
+    margin-bottom: 4%;
+  }
+  .project-title {
+    margin-top: -9.5%;
+    /* margin-bottom: 2%; */
+  }
+}
+/* Para pantallas xl (ordenador) */
+
+/* Para pantallas l (ordenador) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .welcome-title {
+    font-size: 2.5em;
+    margin-top: 8%;
+    color: purple;
+  }
+  img {
+    max-width: 80%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .container-girl {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 84vh;
+  }
+  .girl {
+    position: absolute;
+    top: 36vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  .girl2 {
+    position: absolute;
+    top: 46.5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .stack-title {
+    margin-top: -7%;
+    margin-bottom: 5%;
+  }
+  .project-title {
+    margin-top: -11.5%;
+    /* margin-bottom: 2%; */
+  }
+}
+/* Para pantallas l (ordenador) */
+
+/* Para pantallas m (tablets) */
+@media (min-width: 480px) and (max-width: 768px) {
+  .welcome-title {
+    font-size: 2.5em;
+    margin-top: 10%;
+    color: blue;
+  }
+  img {
+    max-width: 90%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .container-girl {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 68vh;
+  }
+  .girl {
+    position: absolute;
+    top: 28vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  .girl2 {
+    position: absolute;
+    top: 38.5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .stack-title {
+    margin-top: -10%;
+    margin-bottom: 6%;
+  }
+  .project-title {
+    margin-top: -13.5%;
+    /* margin-bottom: 2%; */
+  }
+}
+/* Para pantallas m (tablets) */
+
+/* Para pantallas s (móviles) */
+@media (max-width: 480px) {
+  .welcome-title {
+    font-size: 2em;
+    margin-top: 10%;
+    color: green;
+  }
+  img {
+    max-width: 90%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .container-girl {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 47vh;
+  }
+  .girl {
+    position: absolute;
+    top: 18vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  .girl2 {
+    position: absolute;
+    top: 33.5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+  }
+  p {
+    font-size: 1rem;
+    /* Reduce el tamaño de fuente */
+  }
+  .stack-title {
+    margin-top: -12%;
+    margin-bottom: 7%;
+  }
+  .project-title {
+    margin-top: -15.5%;
+    /* margin-bottom: 2%; */
+  }
+}
+/* Para pantallas s (móviles) */
+
+.fade-in {
+  opacity: 1;
+  z-index: 2;
+}
+
+.fade-out {
+  opacity: 0;
+  z-index: 1;
+}
+
+/* transiciones de las imágenes */
+
 .section-container {
-  transition: opacity 1.5s ease, visibility 1s ease;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
   opacity: 0;
   visibility: hidden;
+
 }
 
 .section-container.fade-in {
@@ -47,59 +444,39 @@ img {
   visibility: hidden;
 }
 
-
 #about {
   text-align: center;
   padding: 50px 20px;
-  background-color: #fff;
   border-radius: 10px;
   margin-bottom: 20px;
-}
-
-#about h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
 }
 
 #about p {
   font-size: 1.2em;
-  color: #666;
+  color: #b0b0b0;
 }
 
 #stacks {
-  background-color: #eaeaea;
-  padding: 40px 20px;
+  /* background-color: #eaeaea; */
+  padding: 20px 20px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+#stacks p, #stacks h5 {
+  color: #bcbcbc;
+}
+.stack-title, .project-title, #projects p {
+  color: #e6e6e6; ;
 }
 
-#stacks h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-#stacks ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#stacks ul li {
-  font-size: 1.1em;
-  padding: 5px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-#projects {
+/* #projects {
   text-align: center;
   padding: 50px 20px;
   background-color: #fff;
   border-radius: 10px;
   margin-bottom: 20px;
-}
-
-#projects h1 {
-  margin-bottom: 20px;
-}
+} */
 
 .errorMessage {
   background-color: #ffecec;
@@ -134,13 +511,14 @@ footer p {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 
-/* From Uiverse.io by Priyanshu02020 */ 
+/* From Uiverse.io by Priyanshu02020 */
 .container2 {
   --form-width: 315px;
   --aspect-ratio: 1.33;
@@ -170,12 +548,10 @@ footer p {
   position: absolute;
   inset: -150px;
   z-index: -2;
-  background: conic-gradient(
-    from 45deg,
-    transparent 75%,
-    #fff,
-    transparent 100%
-  );
+  background: conic-gradient(from 45deg,
+      transparent 75%,
+      #fff,
+      transparent 100%);
   animation: spin 4s ease-in-out infinite;
 }
 
@@ -212,11 +588,9 @@ footer p {
 .logo {
   width: 65px;
   height: 65px;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.2),
-    rgba(0, 0, 0, 0.2)
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(0, 0, 0, 0.2));
   box-shadow:
     8px 8px 16px rgba(0, 0, 0, 0.2),
     -8px -8px 16px rgba(255, 255, 255, 0.06);
@@ -273,6 +647,7 @@ footer p {
     inset 0px 3px 6px -4px rgba(255, 255, 255, 0.6),
     inset 0px -3px 6px -2px rgba(0, 0, 0, 0.8);
 }
+
 .sign-in {
   margin-top: 5px;
 }

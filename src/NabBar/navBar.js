@@ -13,7 +13,9 @@ export default function NavBar({handleNavClick}) {
     //   };
     
     return (
-        <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav
+        style={{ borderRadius: '10px 10px 0 0', marginBottom: '20px' }}
+        className="navbar border-bottom border-body" data-bs-theme="dark">
             <div className="container-fluid">
                 <a className="navbar-brand" href="none">Alicia</a>
                 <button
