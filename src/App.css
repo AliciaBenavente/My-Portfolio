@@ -1,6 +1,7 @@
 body {
   background-color: #102e40;
 }
+
 .App {
   text-align: center;
 }
@@ -36,19 +37,25 @@ body {
   transition: transform 0.3s ease;
 } Añadir a los vídeos */
 
+h1 {
+  color: palegreen;
+}
+
 /* Para pantallas 3xl (ordenador) */
 @media (min-width: 1400px) {
   .welcome-title {
     font-size: 2.5em;
     margin-top: 4%;
-    color: palegreen;
+    /* color: palegreen; */
   }
+
   img {
     max-width: 60%;
     margin-bottom: 2%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
+
   .container-girl {
     position: relative;
     display: flex;
@@ -59,6 +66,7 @@ body {
     margin: 0 auto;
     min-height: 120vh;
   }
+
   .girl {
     position: absolute;
     top: 55vh;
@@ -72,6 +80,7 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   .girl2 {
     position: absolute;
     top: 61.5vh;
@@ -85,22 +94,29 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   p {
     font-size: 1rem;
   }
+
   .stack-title {
     margin-top: -4%;
     margin-bottom: 2%;
+    /* color: palegreen; */
   }
+
   .project-title {
     margin-top: -5.5%;
+    /* color: palegreen; */
     /* margin-bottom: 2%; */
   }
+
   .contact-title {
     margin-top: -4.5%;
-    color: palegreen;
+    /* color: palegreen; */
   }
 }
+
 /* Para pantallas 3xl (ordenador) */
 
 /* Para pantallas xxl (ordenador) */
@@ -108,14 +124,16 @@ body {
   .welcome-title {
     font-size: 2.5em;
     margin-top: 5%;
-    color: palegreen;
+    /* color: palegreen; */
   }
+
   img {
     max-width: 60%;
     margin-bottom: 2%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
+
   .container-girl {
     position: relative;
     display: flex;
@@ -126,6 +144,7 @@ body {
     margin: 0 auto;
     min-height: 100vh;
   }
+
   .girl {
     position: absolute;
     top: 46.5vh;
@@ -139,6 +158,7 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   .girl2 {
     position: absolute;
     top: 53vh;
@@ -152,22 +172,29 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   p {
     font-size: 1rem;
   }
+
   .stack-title {
     margin-top: -5%;
     margin-bottom: 3%;
+    /* color: palegreen; */
   }
+
   .project-title {
     margin-top: -7.5%;
+    /* color: palegreen; */
     /* margin-bottom: 2%; */
   }
+
   .contact-title {
     margin-top: -4.5%;
-    color: palegreen;
+    /* color: palegreen; */
   }
 }
+
 /* Para pantallas xxl (ordenador) */
 
 /* Para pantallas xl (ordenador) */
@@ -175,14 +202,16 @@ body {
   .welcome-title {
     font-size: 2.5em;
     margin-top: 6%;
-    color: palegreen;
+    /* color: palegreen; */
   }
+
   img {
     max-width: 70%;
     margin-bottom: 2%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
+
   .container-girl {
     position: relative;
     display: flex;
@@ -193,6 +222,7 @@ body {
     margin: 0 auto;
     min-height: 94vh;
   }
+
   .girl {
     position: absolute;
     top: 43vh;
@@ -206,6 +236,7 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   .girl2 {
     position: absolute;
     top: 49.5vh;
@@ -219,22 +250,29 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   p {
     font-size: 1rem;
   }
+
   .stack-title {
     margin-top: -6%;
     margin-bottom: 4%;
+    /* color: palegreen; */
   }
+
   .project-title {
     margin-top: -9.5%;
+    /* color: palegreen; */
     /* margin-bottom: 2%; */
   }
+
   .contact-title {
     margin-top: -5%;
-    color: palegreen;
+    /* color: palegreen; */
   }
 }
+
 /* Para pantallas xl (ordenador) */
 
 /* Para pantallas l (ordenador) */
@@ -242,14 +280,16 @@ body {
   .welcome-title {
     font-size: 2.5em;
     margin-top: 8%;
-    color: #98fb98;
+    /* color: #98fb98; */
   }
+
   img {
     max-width: 80%;
     margin-bottom: 2%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
+
   .container-girl {
     position: relative;
     display: flex;
@@ -260,6 +300,7 @@ body {
     margin: 0 auto;
     min-height: 86vh;
   }
+
   .girl {
     position: absolute;
     top: 36vh;
@@ -273,6 +314,7 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   .girl2 {
     position: absolute;
     top: 46.5vh;
@@ -286,22 +328,29 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   p {
     font-size: 1rem;
   }
+
   .stack-title {
     margin-top: -7%;
     margin-bottom: 5%;
+    /* color: palegreen; */
   }
+
   .project-title {
     margin-top: -11.5%;
+    /* color: palegreen; */
     /* margin-bottom: 2%; */
   }
+
   .contact-title {
     margin-top: -7%;
-    color: palegreen;
+    /* color: palegreen; */
   }
 }
+
 /* Para pantallas l (ordenador) */
 
 /* Para pantallas m (tablets) */
@@ -309,14 +358,16 @@ body {
   .welcome-title {
     font-size: 2.5em;
     margin-top: 10%;
-    color: palegreen;
+    /* color: palegreen; */
   }
+
   img {
     max-width: 90%;
     margin-bottom: 2%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
+
   .container-girl {
     position: relative;
     display: flex;
@@ -327,6 +378,7 @@ body {
     margin: 0 auto;
     min-height: 73vh;
   }
+
   .girl {
     position: absolute;
     top: 28vh;
@@ -340,6 +392,7 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   .girl2 {
     position: absolute;
     top: 38.5vh;
@@ -353,22 +406,29 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   p {
     font-size: 1rem;
   }
+
   .stack-title {
     margin-top: -10%;
     margin-bottom: 6%;
+    /* color: palegreen; */
   }
+
   .project-title {
     margin-top: -13.5%;
+    /* color: palegreen; */
     /* margin-bottom: 2%; */
   }
+
   .contact-title {
     margin-top: -10%;
-    color: palegreen;
+    /* color: palegreen; */
   }
 }
+
 /* Para pantallas m (tablets) */
 
 /* Para pantallas s (móviles) */
@@ -376,14 +436,16 @@ body {
   .welcome-title {
     font-size: 2em;
     margin-top: 10%;
-    color: palegreen;
+    /* color: palegreen; */
   }
+
   img {
     max-width: 90%;
     margin-bottom: 2%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
+
   .container-girl {
     position: relative;
     display: flex;
@@ -394,6 +456,7 @@ body {
     margin: 0 auto;
     min-height: 60vh;
   }
+
   .girl {
     position: absolute;
     top: 18vh;
@@ -407,6 +470,7 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   .girl2 {
     position: absolute;
     top: 33.5vh;
@@ -420,23 +484,30 @@ body {
     align-items: center;
     transition: opacity 1.5s ease-in-out;
   }
+
   p {
     font-size: 1rem;
     /* Reduce el tamaño de fuente */
   }
+
   .stack-title {
+    /* color: palegreen; */
     margin-top: -12%;
     margin-bottom: 7%;
   }
+
   .project-title {
     margin-top: -15.5%;
+    /* color: palegreen; */
     /* margin-bottom: 2%; */
   }
+
   .contact-title {
     margin-top: -12%;
-    color: palegreen;
+    /* color: palegreen; */
   }
 }
+
 /* Para pantallas s (móviles) */
 
 .fade-in {
@@ -486,11 +557,15 @@ body {
   border-radius: 10px;
   /* margin-bottom: 20px; */
 }
-#stacks p, #stacks h5 {
+
+#stacks p,
+#stacks h5 {
   color: #bcbcbc;
 }
-.stack-title, .project-title, #projects p {
-  color: #e6e6e6; ;
+
+#projects p {
+  color: #e6e6e6;
+  ;
 }
 
 
@@ -544,6 +619,7 @@ footer p {
 form {
   position: relative;
 }
+
 .form-container {
   border: #234051;
   border-radius: 2%;
@@ -553,12 +629,14 @@ form {
   margin-top: 7%;
   box-shadow: 0 4px 10px rgb(68, 108, 131);
 }
+
 #contact p {
   color: #bcbcbc;
   font-size: 1.2em;
   padding-top: 2%;
   margin-bottom: 1%;
 }
+
 #contact input {
   padding-left: 3%;
   padding-bottom: 1%;
@@ -568,6 +646,7 @@ form {
   border: 2px solid #24343c;
   border-radius: 15px;
 }
+
 #contact textarea {
   background-color: #182c37;
   color: #bcbcbc;
@@ -581,3 +660,102 @@ form {
   margin-top: 10%;
   color: palegreen;
 } */
+
+
+
+/* animations stack list */
+#stacks ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+  gap: 25px;
+}
+
+#stacks ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+#stacks ul li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#stacks ul li::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  transition: 0.5s;
+  filter: blur(15px);
+  z-index: -1;
+  opacity: 0;
+}
+
+#stacks ul li:hover {
+  width: 20vh;
+  /* min-width: 20vh;
+  max-width: 50vh; */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+#stacks ul li:hover::before {
+  opacity: 1;
+}
+
+#stacks ul li:hover::after {
+  opacity: 0.5;
+}
+
+#stacks ul li svg {
+  color: #dcdcdc;
+  font-size: 1.75em;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+
+#stacks ul li:hover svg {
+  transform: scale(0);
+  color: #fff;
+  transition-delay: 0s;
+}
+
+#stacks ul li span {
+  position: absolute;
+}
+
+#stacks ul li .title {
+  color: #fff;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+#stacks ul li:hover .title {
+  transform: scale(1);
+  transition-delay: 0.25s;
+}
+
+/* animations stack list */
