@@ -46,7 +46,6 @@ h1 {
   .welcome-title {
     font-size: 2.5em;
     margin-top: 4%;
-    /* color: palegreen; */
   }
 
   img {
@@ -102,21 +101,29 @@ h1 {
   .stack-title {
     margin-top: -4%;
     margin-bottom: 2%;
-    /* color: palegreen; */
   }
 
   .project-title {
     margin-top: -5.5%;
-    /* color: palegreen; */
-    /* margin-bottom: 2%; */
   }
 
   .contact-title {
     margin-top: -4.5%;
-    /* color: palegreen; */
+  }
+  #stacks ul li {
+    width: 14vh;
+    height: 14vh;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  #stacks ul li:hover {
+    width: 65vh;
+    height: 14vh;
+    margin-left: -5%;
+    margin-right: -5%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
 }
-
 /* Para pantallas 3xl (ordenador) */
 
 /* Para pantallas xxl (ordenador) */
@@ -124,7 +131,6 @@ h1 {
   .welcome-title {
     font-size: 2.5em;
     margin-top: 5%;
-    /* color: palegreen; */
   }
 
   img {
@@ -180,21 +186,29 @@ h1 {
   .stack-title {
     margin-top: -5%;
     margin-bottom: 3%;
-    /* color: palegreen; */
   }
 
   .project-title {
     margin-top: -7.5%;
-    /* color: palegreen; */
-    /* margin-bottom: 2%; */
   }
 
   .contact-title {
     margin-top: -4.5%;
-    /* color: palegreen; */
+  }
+  #stacks ul li {
+    width: 14vh;
+    height: 14vh;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  #stacks ul li:hover {
+    width: 50vh;
+    height: 14vh;
+    margin-left: -4%;
+    margin-right: -4%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
 }
-
 /* Para pantallas xxl (ordenador) */
 
 /* Para pantallas xl (ordenador) */
@@ -202,7 +216,6 @@ h1 {
   .welcome-title {
     font-size: 2.5em;
     margin-top: 6%;
-    /* color: palegreen; */
   }
 
   img {
@@ -258,21 +271,29 @@ h1 {
   .stack-title {
     margin-top: -6%;
     margin-bottom: 4%;
-    /* color: palegreen; */
   }
 
   .project-title {
     margin-top: -9.5%;
-    /* color: palegreen; */
-    /* margin-bottom: 2%; */
   }
 
   .contact-title {
     margin-top: -5%;
-    /* color: palegreen; */
+  }
+  #stacks ul li {
+    width: 14vh;
+    height: 14vh;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #stacks ul li:hover {
+    width: 45vh;
+    height: 14vh;
+    margin-left: -6%;
+    margin-right: -6%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
 }
-
 /* Para pantallas xl (ordenador) */
 
 /* Para pantallas l (ordenador) */
@@ -280,7 +301,6 @@ h1 {
   .welcome-title {
     font-size: 2.5em;
     margin-top: 8%;
-    /* color: #98fb98; */
   }
 
   img {
@@ -336,21 +356,29 @@ h1 {
   .stack-title {
     margin-top: -7%;
     margin-bottom: 5%;
-    /* color: palegreen; */
   }
 
   .project-title {
     margin-top: -11.5%;
-    /* color: palegreen; */
-    /* margin-bottom: 2%; */
   }
 
   .contact-title {
     margin-top: -7%;
-    /* color: palegreen; */
+  }
+  #stacks ul li {
+    width: 14vh;
+    height: 14vh;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  #stacks ul li:hover {
+    width: 30vh;
+    height: 14vh;
+    margin-left: -4%;
+    margin-right: -4%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
 }
-
 /* Para pantallas l (ordenador) */
 
 /* Para pantallas m (tablets) */
@@ -414,21 +442,31 @@ h1 {
   .stack-title {
     margin-top: -10%;
     margin-bottom: 6%;
-    /* color: palegreen; */
+    /* color: rgb(188, 0, 0); */
   }
 
   .project-title {
     margin-top: -13.5%;
-    /* color: palegreen; */
-    /* margin-bottom: 2%; */
   }
 
   .contact-title {
     margin-top: -10%;
-    /* color: palegreen; */
+ 
+  }
+  #stacks ul li {
+    width: 12vh;
+    height: 12vh;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+  }
+  #stacks ul li:hover {
+    width: 30vh;
+    height: 12vh;
+    margin-left: -5%;
+    margin-right: -5%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
 }
-
 /* Para pantallas m (tablets) */
 
 /* Para pantallas s (móviles) */
@@ -487,27 +525,35 @@ h1 {
 
   p {
     font-size: 1rem;
-    /* Reduce el tamaño de fuente */
   }
 
   .stack-title {
-    /* color: palegreen; */
+
     margin-top: -12%;
     margin-bottom: 7%;
   }
 
   .project-title {
     margin-top: -15.5%;
-    /* color: palegreen; */
-    /* margin-bottom: 2%; */
   }
 
   .contact-title {
     margin-top: -12%;
-    /* color: palegreen; */
+  }
+  #stacks ul li {
+    width: 10vh;
+    height: 10vh;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #stacks ul li:hover {
+    width: 30vh;
+    height: 10vh;
+    margin-left: -5%;
+    margin-right: -5%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
 }
-
 /* Para pantallas s (móviles) */
 
 .fade-in {
@@ -668,15 +714,14 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  position: relative;
-  gap: 25px;
+  gap: 0.5em;
 }
 
 #stacks ul li {
   position: relative;
   list-style: none;
-  width: 60px;
-  height: 60px;
+  /* width: 60px; */
+  /* height: 60px; */
   background: white;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   border-radius: 60px;
@@ -711,12 +756,10 @@ form {
   opacity: 0;
 }
 
-#stacks ul li:hover {
+/* #stacks ul li:hover {
   width: 20vh;
-  /* min-width: 20vh;
-  max-width: 50vh; */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
-}
+} */
 
 #stacks ul li:hover::before {
   opacity: 1;
@@ -745,7 +788,7 @@ form {
 
 #stacks ul li .title {
   color: #fff;
-  font-size: 1.1em;
+  font-size: 0.8em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transform: scale(0);
