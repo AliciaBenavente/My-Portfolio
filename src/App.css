@@ -727,7 +727,7 @@ form {
   border-radius: 60px;
   cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   transition: 0.5s;
 }
@@ -751,6 +751,7 @@ form {
   border-radius: 60px;
   background: linear-gradient(45deg, var(--i), var(--j));
   transition: 0.5s;
+  justify-content: space-between;
   filter: blur(15px);
   z-index: -1;
   opacity: 0;
@@ -773,13 +774,14 @@ form {
   color: #dcdcdc;
   font-size: 1.75em;
   transition: 0.5s;
-  transition-delay: 0.25s;
+  transition-delay: 0s;
 }
 
 #stacks ul li:hover svg {
-  transform: scale(0);
-  color: #fff;
-  transition-delay: 0s;
+  /* transform: scale(0); */
+  transform: translateX(-3.3rem);
+  /* color: #fff; */
+  transition-delay: 0.3s;
 }
 
 #stacks ul li span {
@@ -798,7 +800,41 @@ form {
 
 #stacks ul li:hover .title {
   transform: scale(1);
+  transform: translateX(1.5rem);
   transition-delay: 0.25s;
 }
 
 /* animations stack list */
+
+#Flask {
+  margin-top: 0.4rem;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+#SQLA {
+  margin-top: 2.6rem;
+  margin-left: 2.6rem;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+#MySQL {
+  margin-top: 2.8rem;
+  margin-left: 3.2rem;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+#stacks ul li:hover #Flask, #SQLA, #MySQL {
+  transform: none; /* Ensure Flask SVG does not transform on hover */
+  /* color: #dcdcdc;  */
+  transition-delay: 0s; /* No delay */
+}
+#stacks ul li:hover #SQLA, #MySQL {
+  transform: none; /* Ensure Flask SVG does not transform on hover */
+  /* color: #dcdcdc;  */
+  transition-delay: 0s; /* No delay */
+}
+#stacks ul li:hover #MySQL {
+  transform: none; /* Ensure Flask SVG does not transform on hover */
+  /* color: #dcdcdc;  */
+  transition-delay: 0s; /* No delay */
+}
