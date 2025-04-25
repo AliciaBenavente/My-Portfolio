@@ -123,6 +123,11 @@ h1 {
     margin-right: -5%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
+  #stacks ul li:hover #VSC {
+    margin-left: -7rem;
+    width: 2.6em;
+    height: 2.6em;
+  }
 }
 /* Para pantallas 3xl (ordenador) */
 
@@ -207,6 +212,11 @@ h1 {
     margin-left: -4%;
     margin-right: -4%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+  #stacks ul li:hover #VSC {
+    margin-left: -7rem;
+    width: 2.6em;
+    height: 2.6em;
   }
 }
 /* Para pantallas xxl (ordenador) */
@@ -293,6 +303,11 @@ h1 {
     margin-right: -6%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
+  #stacks ul li:hover #VSC {
+    margin-left: -5rem;
+    width: 2em;
+    height: 2em;
+  }
 }
 /* Para pantallas xl (ordenador) */
 
@@ -377,6 +392,11 @@ h1 {
     margin-left: -4%;
     margin-right: -4%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+  #stacks ul li:hover #VSC {
+    margin-left: -2.3rem;
+    width: 1.3em;
+    height: 1.3em;
   }
 }
 /* Para pantallas l (ordenador) */
@@ -466,6 +486,11 @@ h1 {
     margin-right: -5%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
+  #stacks ul li:hover #VSC {
+    margin-left: -2.3rem;
+    width: 1.3em;
+    height: 1.3em;
+  }
 }
 /* Para pantallas m (tablets) */
 
@@ -552,6 +577,11 @@ h1 {
     margin-left: -5%;
     margin-right: -5%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+  #stacks ul li:hover #VSC {
+    margin-left: -2.3rem;
+    width: 1.3em;
+    height: 1.3em;
   }
 }
 /* Para pantallas s (móviles) */
@@ -720,8 +750,6 @@ form {
 #stacks ul li {
   position: relative;
   list-style: none;
-  /* width: 60px; */
-  /* height: 60px; */
   background: white;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   border-radius: 60px;
@@ -757,11 +785,6 @@ form {
   opacity: 0;
 }
 
-/* #stacks ul li:hover {
-  width: 20vh;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
-} */
-
 #stacks ul li:hover::before {
   opacity: 1;
 }
@@ -778,32 +801,28 @@ form {
 }
 
 #stacks ul li:hover svg {
-  /* transform: scale(0); */
   transform: translateX(-3.3rem);
-  /* color: #fff; */
   transition-delay: 0.3s;
 }
 /* Estilos globales */
 #stacks ul li path:nth-of-type(2) {
-  transition: fill 0.5s ease-in-out; /* Transición uniforme */
+  transition: fill 0.5s ease-in-out;
 }
 
 /* Estilo específico para Bootstrap */
 #stacks ul li.bootstrap path:nth-of-type(2) {
-  fill: url(#defaultGradient-bootstrap); /* Gradiente blanco por defecto */
+  fill: url(#defaultGradient-bootstrap);
 }
-
 #stacks ul li.bootstrap:hover path:nth-of-type(2) {
-  fill: url(#dynamicGradient-bootstrap); /* Gradiente dinámico al hacer hover */
+  fill: url(#dynamicGradient-bootstrap);
 }
 
 /* Estilo específico para Miró */
 #stacks ul li.miro path:nth-of-type(2) {
-  fill: url(#defaultGradient-miro); /* Gradiente blanco por defecto */
+  fill: url(#defaultGradient-miro);
 }
-
 #stacks ul li.miro:hover path:nth-of-type(2) {
-  fill: url(#dynamicGradient-miro); /* Gradiente dinámico al hacer hover */
+  fill: url(#dynamicGradient-miro);
 }
 
 #stacks ul li span {
@@ -825,7 +844,6 @@ form {
   transform: translateX(1.5rem);
   transition-delay: 0.25s;
 }
-
 /* animations stack list */
 
 #Flask {
@@ -845,18 +863,39 @@ form {
   transition: 0.5s;
   transition-delay: 0s;
 }
+#VSC {
+  margin-left: -0.1rem;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+#Trello {
+  margin-top: 0.2rem;
+  margin-left: -0.2rem;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+#Miro {
+  margin-top: -0.4rem;
+  margin-left: -0.4rem;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
 #stacks ul li:hover #Flask {
-  transform: none; /* Ensure Flask SVG does not transform on hover */
-  /* color: #dcdcdc;  */
-  transition-delay: 0s; /* No delay */
+  transform: none; 
+  transition-delay: 0s; 
 }
 #stacks ul li:hover #SQLA {
-  transform: none; /* Ensure Flask SVG does not transform on hover */
-  /* color: #dcdcdc;  */
-  transition-delay: 0s; /* No delay */
+  transform: none; 
+
+  transition-delay: 0s; 
 }
 #stacks ul li:hover #MySQL {
-  transform: none; /* Ensure Flask SVG does not transform on hover */
-  /* color: #dcdcdc;  */
-  transition-delay: 0s; /* No delay */
+  transform: none; 
+  transition-delay: 0s; 
 }
+/* #stacks ul li:hover #VSC {
+  margin-left: -2.3rem;
+  width: 1.3em;
+  height: 1.3em;
+} */

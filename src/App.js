@@ -250,13 +250,12 @@ function App() {
                 </li>
               </ul>
             </div>
-
             <h5 className='mb-4'>Tools</h5>
             <div className='row'>
               <ul>
                 <li style={{ "--i": "#72ffb0", "--j": "#5589a5" }}>
                   <span className="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24">
+                    <svg id='VSC' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24">
                       <path d="M22 6.2v11.57c0 .77-.44 1.47-1.13 1.8-.92.44-2.17 1.05-2.92 1.41.03-.16.05-.34.05-.51V3.53c0-.22-.03-.4-.06-.52.81.38 2.03.97 2.92 1.39C21.56 4.73 22 5.43 22 6.2zM3.91 13.34c.76.7 1.62 1.48 2.51 2.28-.54.41-1.02.78-1.41 1.07-.59.44-1.4.43-1.98-.04-.39-.32-.59-.79-.59-1.25 0-.44.17-.87.52-1.19C3.24 13.95 3.56 13.66 3.91 13.34zM16 3.53v4.81c0 0-1.36 1.03-3.16 2.4-1.08-.81-2.22-1.68-3.29-2.5 2.34-2.13 4.54-4.14 5.58-5.1.23-.22.56-.16.74.04.05.06.09.13.11.22C15.99 3.44 16 3.48 16 3.53zM16 20.47v-4.81c0 0-8.106-6.162-10.989-8.345-.59-.447-1.404-.43-1.979.036l0 0c-.766.621-.798 1.778-.067 2.44 3.01 2.728 10.034 9.098 12.166 11.069C15.462 21.167 16 20.93 16 20.47z"></path>
                     </svg>
                   </span>
@@ -304,7 +303,7 @@ function App() {
                 </li>
                 <li style={{ "--i": "#72ffb0", "--j": "#5589a5" }}>
                   <span className="icon">
-                    <svg strokeWidth="0" role="img" viewBox="0 0 24 24" color="currentColor" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+                    <svg id='Trello' strokeWidth="0" role="img" viewBox="0 0 24 24" color="currentColor" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                       <path d="M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.005-1.005zm5.723-5.756H5.736a5.215 5.215 0 0 0 5.215 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.758a1.001 1.001 0 0 0-1.001-1.001zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24 12.483V1.005A1.001 1.001 0 0 0 23.013 0Z">
                       </path>
                     </svg>
@@ -313,7 +312,7 @@ function App() {
                 </li>
                 <li className='miro' style={{ "--i": "#72ffb0", "--j": "#5589a5" }}>
                   <span className="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                    <svg id='Miro' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
                       <defs>
                         <linearGradient id="dynamicGradient-miro" x1="0%" y1="0%" x2="100%" y2="100%">
                           <stop offset="0%" style={{ stopColor: "var(--i)", stopOpacity: 1 }} />
