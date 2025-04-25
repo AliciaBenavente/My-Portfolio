@@ -771,7 +771,7 @@ form {
 }
 
 #stacks ul li svg {
-  color: #dcdcdc;
+  color: #fff;
   font-size: 1.75em;
   transition: 0.5s;
   transition-delay: 0s;
@@ -782,6 +782,28 @@ form {
   transform: translateX(-3.3rem);
   /* color: #fff; */
   transition-delay: 0.3s;
+}
+/* Estilos globales */
+#stacks ul li path:nth-of-type(2) {
+  transition: fill 0.5s ease-in-out; /* Transición uniforme */
+}
+
+/* Estilo específico para Bootstrap */
+#stacks ul li.bootstrap path:nth-of-type(2) {
+  fill: url(#defaultGradient-bootstrap); /* Gradiente blanco por defecto */
+}
+
+#stacks ul li.bootstrap:hover path:nth-of-type(2) {
+  fill: url(#dynamicGradient-bootstrap); /* Gradiente dinámico al hacer hover */
+}
+
+/* Estilo específico para Miró */
+#stacks ul li.miro path:nth-of-type(2) {
+  fill: url(#defaultGradient-miro); /* Gradiente blanco por defecto */
+}
+
+#stacks ul li.miro:hover path:nth-of-type(2) {
+  fill: url(#dynamicGradient-miro); /* Gradiente dinámico al hacer hover */
 }
 
 #stacks ul li span {
@@ -823,12 +845,12 @@ form {
   transition: 0.5s;
   transition-delay: 0s;
 }
-#stacks ul li:hover #Flask, #SQLA, #MySQL {
+#stacks ul li:hover #Flask {
   transform: none; /* Ensure Flask SVG does not transform on hover */
   /* color: #dcdcdc;  */
   transition-delay: 0s; /* No delay */
 }
-#stacks ul li:hover #SQLA, #MySQL {
+#stacks ul li:hover #SQLA {
   transform: none; /* Ensure Flask SVG does not transform on hover */
   /* color: #dcdcdc;  */
   transition-delay: 0s; /* No delay */
