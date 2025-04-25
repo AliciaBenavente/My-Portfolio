@@ -123,10 +123,37 @@ h1 {
     margin-right: -5%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
+  #stacks ul li:hover .title {
+    font-size: 2.3em;
+    letter-spacing: 0.1em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover #VSC-title {
+    font-size: 1.5em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover #ReactNative {
+    margin-left: -14rem;
+    width: 2.7em;
+    height: 2.7em;
+   }
+  #stacks ul li:hover svg {
+    margin-left: -8rem;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  #stacks ul li:hover #JS,
+  #stacks ul li:hover #TS,
+  #stacks ul li:hover #Bootstrap,
+  #stacks ul li:hover #Postman {
+    margin-left: -13rem;
+ }
   #stacks ul li:hover #VSC {
-    margin-left: -7rem;
-    width: 2.6em;
-    height: 2.6em;
+    margin-left: -14rem;
   }
 }
 /* Para pantallas 3xl (ordenador) */
@@ -213,10 +240,35 @@ h1 {
     margin-right: -4%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
-  #stacks ul li:hover #VSC {
+  #stacks ul li:hover .title {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover #VSC-title {
+    font-size: 1.2em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover #ReactNative {
     margin-left: -7rem;
-    width: 2.6em;
-    height: 2.6em;
+   }
+  #stacks ul li:hover svg {
+    margin-left: -5rem;
+    width: 2.3em;
+    height: 2.3em;
+  }
+  #stacks ul li:hover #JS,
+  #stacks ul li:hover #TS,
+  #stacks ul li:hover #Bootstrap,
+  #stacks ul li:hover #Postman {
+    margin-left: -7rem;
+ }
+  #stacks ul li:hover #VSC {
+    margin-left: -8.7rem;
   }
 }
 /* Para pantallas xxl (ordenador) */
@@ -303,10 +355,27 @@ h1 {
     margin-right: -6%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
-  #stacks ul li:hover #VSC {
+  #stacks ul li:hover .title {
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover #VSC-title {
+    font-size: 1em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover svg {
     margin-left: -5rem;
-    width: 2em;
-    height: 2em;
+    width: 2.3em;
+    height: 2.3em;
+  }
+
+  #stacks ul li:hover #VSC {
+    margin-left: -7rem;
   }
 }
 /* Para pantallas xl (ordenador) */
@@ -393,10 +462,32 @@ h1 {
     margin-right: -4%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
+  #stacks ul li:hover .title {
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover #VSC-title {
+    font-size: 0.8em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover #ReactNative {
+    margin-left: -2rem;
+  }
+  #stacks ul li:hover #JS,
+  #stacks ul li:hover #TS,
+  #stacks ul li:hover #Bootstrap,
+  #stacks ul li:hover #Postman {
+    margin-left: -1rem;
+  }
   #stacks ul li:hover #VSC {
-    margin-left: -2.3rem;
-    width: 1.3em;
-    height: 1.3em;
+    margin-left: -2.5rem;
+    width: 1.5em;
+    height: 1.5em;
   }
 }
 /* Para pantallas l (ordenador) */
@@ -486,10 +577,32 @@ h1 {
     margin-right: -5%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
+  #stacks ul li:hover .title {
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover #VSC-title {
+    font-size: 0.8em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover #ReactNative {
+    margin-left: -2rem;
+  }
+  #stacks ul li:hover #JS,
+  #stacks ul li:hover #TS,
+  #stacks ul li:hover #Bootstrap,
+  #stacks ul li:hover #Postman {
+    margin-left: -1rem;
+  }
   #stacks ul li:hover #VSC {
-    margin-left: -2.3rem;
-    width: 1.3em;
-    height: 1.3em;
+    margin-left: -2.5rem;
+    width: 1.5em;
+    height: 1.5em;
   }
 }
 /* Para pantallas m (tablets) */
@@ -578,10 +691,33 @@ h1 {
     margin-right: -5%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
   }
+
+  #stacks ul li:hover .title {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover #VSC-title {
+    font-size: 0.8em;
+    transform: scale(1);
+    transform: translateX(1.5rem);
+    transition-delay: 0.25s;
+  }
+  #stacks ul li:hover #ReactNative {
+    margin-left: -3rem;
+  }
+  #stacks ul li:hover #JS,
+  #stacks ul li:hover #TS,
+  #stacks ul li:hover #Bootstrap,
+  #stacks ul li:hover #Postman {
+    margin-left: -2rem;
+  }
   #stacks ul li:hover #VSC {
-    margin-left: -2.3rem;
-    width: 1.3em;
-    height: 1.3em;
+    margin-left: -3.5rem;
+    width: 1.5em;
+    height: 1.5em;
   }
 }
 /* Para pantallas s (móviles) */
@@ -831,21 +967,20 @@ form {
 
 #stacks ul li .title {
   color: #fff;
-  font-size: 0.8em;
-  letter-spacing: 0.1em;
+  /* font-size: 0.8em;
+  letter-spacing: 0.1em; */
   text-transform: uppercase;
   transform: scale(0);
   transition: 0.5s;
   transition-delay: 0s;
 }
 
-#stacks ul li:hover .title {
-  transform: scale(1);
-  transform: translateX(1.5rem);
-  transition-delay: 0.25s;
-}
 /* animations stack list */
-
+#ReactNative {
+  /* margin-left: -0.1rem; */
+  transition: 0.5s;
+  transition-delay: 0s;
+}
 #Flask {
   margin-top: 0.4rem;
   transition: 0.5s;
@@ -894,8 +1029,3 @@ form {
   transform: none; 
   transition-delay: 0s; 
 }
-/* #stacks ul li:hover #VSC {
-  margin-left: -2.3rem;
-  width: 1.3em;
-  height: 1.3em;
-} */
