@@ -24,7 +24,6 @@ function App() {
     setVisibleSection(section); // Actualiza la sección visible
   };
 
-
   const handleChange = (event) => {
     const { name, value } = event.target;
     setForm({ ...form, [name]: value });
@@ -44,7 +43,9 @@ function App() {
 
   return (
     <div className="container App">
-      <NavBar handleNavClick={handleNavClick} />
+      <NavBar
+      handleNavClick={handleNavClick}
+      />
 
       <div className={`section-container ${visibleSection === "about" ? "fade-in" : "fade-out"}`}>
         <h1 className='welcome-title'>Welcome to my portfolio</h1>
