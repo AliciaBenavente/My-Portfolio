@@ -1,6 +1,8 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import NavBar from './NabBar/navBar';
+import labcoatgirl from './assets/1_labcoat girl_noBG.png';
+
 function App() {
 
   const [form, setForm] = useState({
@@ -44,9 +46,9 @@ function App() {
   return (
     <div className="container App">
       <NavBar
-      handleNavClick={handleNavClick}
+        handleNavClick={handleNavClick}
       />
-
+      <img className='labcoat-girl' src={labcoatgirl} alt='girl in lab coat' />
       <div className={`section-container ${visibleSection === "about" ? "fade-in" : "fade-out"}`}>
         <h1 className='welcome-title'>Welcome to my portfolio</h1>
         {visibleSection === "about" && (
