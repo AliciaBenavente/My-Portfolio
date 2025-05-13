@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import NavBar from './NabBar/navBar';
-import labcoatgirl from './assets/1_labcoat girl_noBG.png';
+import MouseFollower from './mouseFollower/mouseFollower';
 
 function App() {
 
@@ -31,7 +31,6 @@ function App() {
     setForm({ ...form, [name]: value });
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (form.name === '' || form.email === '') {
@@ -41,14 +40,15 @@ function App() {
     }
     // setSubmitted(true);
     setError(false);
-  }
-
+  };
+  
   return (
     <div className="container App">
       <NavBar
         handleNavClick={handleNavClick}
       />
-      <img className='labcoat-girl' src={labcoatgirl} alt='girl in lab coat' />
+      <MouseFollower />
+      {/* <img className='labcoat-girl' src={labcoatgirl} alt='girl in lab coat' /> */}
       <div className={`section-container ${visibleSection === "about" ? "fade-in" : "fade-out"}`}>
         <h1 className='welcome-title'>Welcome to my portfolio</h1>
         {visibleSection === "about" && (

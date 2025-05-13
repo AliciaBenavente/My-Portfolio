@@ -1,0 +1,23 @@
+.mouseFollower {
+    position: absolute;
+    pointer-events: none;
+    z-index: 10;
+}
+.labGirl {
+    width: 8vh;
+    height: 10vh;
+    box-Shadow: none;
+}
+
+.bouncing {
+    animation: bouncing 0.2s infinite alternate;
+}
+
+@keyframes bouncing {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}

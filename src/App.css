@@ -32,16 +32,6 @@ body {
   color: #61dafb;
 }
 
-.labcoat-girl {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  width: 10%;
-  height: 10%;
-  z-index: 10;
-  box-shadow: none;
-}
-
 h1 {
   color: palegreen;
 }
