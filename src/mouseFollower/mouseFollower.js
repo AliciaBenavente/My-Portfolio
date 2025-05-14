@@ -28,10 +28,18 @@ const MouseFollower = () => {
     }, [handleMouseMove]);
     useEffect(() => {
         const interval = setInterval(() => {
-            setGirlPosition((prevPosition) => ({
-                x: prevPosition.x + (mousePosition.x - prevPosition.x) * 0.05,
-                y: prevPosition.y + (mousePosition.y - prevPosition.y) * 0.05,
-            }))}, 16);
+            setGirlPosition((prevPosition) => {
+                const newX= prevPosition.x + (mousePosition.x - prevPosition.x) * 0.02;
+                const maxY= window.innerHeight * 2/3;
+                const minY= window.innerHeight;
+
+                const newY = Math.min(Math.max(prevPosition.y + (mousePosition.y - prevPosition.y) * 0.02, maxY), minY);
+                return {
+                    x: newX,
+                    y: newY,
+                }
+            })
+            }, 16);
             return () => clearInterval(interval);
     }, [mousePosition]);
 
